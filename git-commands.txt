@@ -1,2 +1,5 @@
 1. git init: Marks the current directory as a git repo.
 2. git status : Checks status of current repo.
+3. git add :
+    a. git add file_name file2_name : Adds particular file or files to staging area.
+    b. git add . : Adds all files to staging area.
