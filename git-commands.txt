@@ -12,7 +12,8 @@
 3. .gitignore : Files and folders mentioned inside this file will be ignored by git.
 4. git restore file_name : Restores all the progress to the last commit.
 5. git checkout commit_id : Takes to the mentioned commit state.
-
+6. git checkout HEAD~n : Takes n steps back from the head.
+7. git checkout branch_name : Takes to last commit of the mentioned branch.
 
 -- COMMIT --
 
