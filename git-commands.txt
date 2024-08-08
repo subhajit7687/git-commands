@@ -11,6 +11,7 @@
 2. git status : Checks status of current repo.
 3. .gitignore : Files and folders mentioned inside this file will be ignored by git.
 4. git restore file_name : Restores all the progress to the last commit.
+5. git checkout commit_id : Takes to the mentioned commit state.
 
 
 -- COMMIT --
