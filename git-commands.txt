@@ -29,3 +29,4 @@
 3. git checkout branch-name : Switches the head to the mentioned branch.
 4. git checkout -b branch-name : Creates a new branch with the given name and switches to it immediately.
 5. git merge branch-name : Merges the mentioned branch with current branch.
+6. git branch -d branch-name : Deletes the branch.
