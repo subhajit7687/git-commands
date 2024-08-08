@@ -37,3 +37,11 @@
 1. git diff --staged : Shows the difference between staged files and last committed files.
 2. git diff commit_id-1 commit_id-2 : Shows the difference between two given commit ids.
 3. git diff branch-1 branch-2 : Shows the difference between two given branches.
+
+
+-- STASH --
+
+1. git stash : Stores your current in progress works in stash (it's branch independent).
+2. git stash pop : Takes out all the stashed progress into the current branch.
+3. git stash list : Shows all the stashed progress.
+4. git stash apply stash-id : Gives the stashed progress for the given stash-id.
