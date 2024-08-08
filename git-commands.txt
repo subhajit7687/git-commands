@@ -10,6 +10,7 @@
 1. git init: Marks the current directory as a git repo.
 2. git status : Checks status of current repo.
 3. .gitignore : Files and folders mentioned inside this file will be ignored by git.
+4. git restore file_name : Restores all the progress to the last commit.
 
 
 -- COMMIT --
