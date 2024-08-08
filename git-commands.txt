@@ -1,10 +1,11 @@
 1. git config --global user.name "Your name" : Set your user name.
 2. git config --global user.email "your email" : Set your email.
-3. git init: Marks the current directory as a git repo.
-4. git status : Checks status of current repo.
-5. git add :
+3. git config --global core.editor "code --wait" : Sets vs code as default editor for git.
+4. git init: Marks the current directory as a git repo.
+5. git status : Checks status of current repo.
+6. git add :
     a. git add file_name file2_name : Adds particular file or files to staging area.
     b. git add . : Adds all files to staging area.
-6. git commit -m "your-message" : Create commits with given message.
-7. git log : Gives all the details about previous commits.
-8. git log --oneline : Gives short details about previous commits.
+7. git commit -m "your-message" : Create commits with given message.
+8. git log : Gives all the details about previous commits.
+9. git log --oneline : Gives short details about previous commits.
