@@ -27,4 +27,4 @@
 1. git branch : Shows all the branches.
 2. git branch branch-name : Creates new branch with given name.
 3. git checkout branch-name : Switches the head to the mentioned branch.
-4. git checkout -b branch-name : Creates a new branch with the given name and switches to it immedietly.
+4. git checkout -b branch-name : Creates a new branch with the given name and switches to it immediately.
