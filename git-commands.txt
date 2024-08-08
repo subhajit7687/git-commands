@@ -30,3 +30,8 @@
 4. git checkout -b branch-name : Creates a new branch with the given name and switches to it immediately.
 5. git merge branch-name : Merges the mentioned branch with current branch.
 6. git branch -d branch-name : Deletes the branch.
+
+
+-- DIFF --
+
+1. git diff --staged : Shows the difference between staged files and last committed files.
