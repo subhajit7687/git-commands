@@ -36,3 +36,4 @@
 
 1. git diff --staged : Shows the difference between staged files and last committed files.
 2. git diff commit_id-1 commit_id-2 : Shows the difference between two given commit ids.
+3. git diff branch-1 branch-2 : Shows the difference between two given branches.
