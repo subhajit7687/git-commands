@@ -36,6 +36,9 @@
 4. git checkout -b branch-name : Creates a new branch with the given name and switches to it immediately.
 5. git merge branch-name : Merges the mentioned branch with current branch.
 6. git branch -d branch-name : Deletes the branch.
+7. git rebase branch-name : Merges mentioned branch with current branch making the mentioned branch's last commit as it's base. So basically it will take the first node of the current branch, and will put it on the last node of the mentioned branch making it a linear branch that will look like it continues from where the mentioned branch finished.
+     ** It's a slight risky command as it modifies the commit history so don't use it on the main/master branch. **
+     ** In case of conflicts first solve the conflicts manually, then use "git add file-name or ." to stage all changes and then use "git rebase --continue" to resume the process. **
 
 
 -- DIFF --
