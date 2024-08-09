@@ -63,3 +63,4 @@
 2. git remote add name url : Creates connection between your local project and github repo.
 3. git remote rename old_name new_name : Changes the remote name.
 4. git remote remove name : Deletes the remote name.
+5. git push remote_name branch_name : Pushes code of current branch to remote.
