@@ -1,7 +1,7 @@
 -- STARTER --
 
-1. git config --global user.name "Your name" : Set your user name.
-2. git config --global user.email "your email" : Set your email.
+1. git config --global user.name "<your name>" : Set your user name.
+2. git config --global user.email "<your email>" : Set your email.
 3. git config --global core.editor "code --wait" : Sets vs code as default editor for git.
 
 
@@ -11,19 +11,19 @@
 2. git status : Checks status of current repo.
 3. .gitignore : Files and folders mentioned inside this file will be ignored by git.
 4. git restore :
-    a. git restore file_name : Restores all the progress for the file to the last commit.
+    a. git restore <file_name> : Restores all the progress for the file to the last commit.
     b. git restore . : Restores all the progress to the last commit.
-5. git checkout commit_id : Takes to the mentioned commit state.
+5. git checkout <commit_id> : Takes to the mentioned commit state.
 6. git checkout HEAD~n : Takes n steps back from the head.
-7. git checkout branch_name : Takes to last commit of the mentioned branch.
+7. git checkout <branch_name> : Takes to last commit of the mentioned branch.
 
 -- COMMIT --
 
 1. git add :
-    a. git add file_name file2_name : Adds particular file or files to staging area.
+    a. git add <file_name> <file2_name> ... : Adds particular file or files to staging area.
     b. git add . : Adds all files to staging area.
-2. git commit -m "your-message" : Create commits with given message.
-3. git commit -am "your-message" : Adds all files to the staging area and commits at the same time.
+2. git commit -m "<your-message>" : Create commits with given message.
+3. git commit -am "<your-message>" : Adds all files to the staging area and commits at the same time.
 4. git log : Gives all the details about previous commits.
 5. git log --oneline : Gives short details about previous commits.
 
@@ -31,22 +31,22 @@
 -- BRANCH --
 
 1. git branch : Shows all the branches.
-2. git branch branch-name : Creates new branch with given name.
-3. git checkout branch-name : Switches the head to the mentioned branch.
-4. git checkout -b branch-name : Creates a new branch with the given name and switches to it immediately.
-5. git merge branch-name : Merges the mentioned branch with current branch.
-6. git branch -d branch-name : Deletes the branch.
-7. git rebase branch-name : Merges mentioned branch with current branch making the mentioned branch's last commit as it's base. So basically it will take the first node of the current branch, and will put it on the last node of the mentioned branch making it a linear branch that will look like it continues from where the mentioned branch finished.
+2. git branch <branch-name> : Creates new branch with given name.
+3. git checkout <branch-name> : Switches the head to the mentioned branch.
+4. git checkout -b <branch-name> : Creates a new branch with the given name and switches to it immediately.
+5. git merge <branch-name> : Merges the mentioned branch with current branch.
+6. git branch -d <branch-name> : Deletes the branch.
+7. git rebase <branch-name> : Merges mentioned branch with current branch making the mentioned branch's last commit as it's base. So basically it will take the first node of the current branch, and will put it on the last node of the mentioned branch making it a linear branch that will look like it continues from where the mentioned branch finished.
      ** It's a slight risky command as it modifies the commit history so don't use it on the main/master branch. **
      ** In case of conflicts first solve the conflicts manually, then use "git add file-name or ." to stage all changes and then use "git rebase --continue" to resume the process. **
-8. git branch -M new_branch_name : Updates the current name of the branch with the new name.
+8. git branch -M <new_branch_name> : Updates the current name of the branch with the new name.
 
 
 -- DIFF --
 
 1. git diff --staged : Shows the difference between staged files and last committed files.
-2. git diff commit_id-1 commit_id-2 : Shows the difference between two given commit ids.
-3. git diff branch-1 branch-2 : Shows the difference between two given branches.
+2. git diff <commit_id-1> <commit_id-2> : Shows the difference between two given commit ids.
+3. git diff <branch-1> <branch-2> : Shows the difference between two given branches.
 
 
 -- STASH --
@@ -54,14 +54,17 @@
 1. git stash : Stores your current in progress works in stash (it's branch independent).
 2. git stash pop : Takes out all the stashed progress into the current branch.
 3. git stash list : Shows all the stashed progress.
-4. git stash apply stash-id : Gives the stashed progress for the given stash-id.
+4. git stash apply <stash-id> : Gives the stashed progress for the given stash-id.
 
 
 -- REMOTE --
 
 1. git remote -v : Shows all remote configs.
-2. git remote add name url : Creates connection between your local project and github repo.
-3. git remote rename old_name new_name : Changes the remote name.
-4. git remote remove name : Deletes the remote name.
-5. git push remote_name branch_name : Pushes code of current branch to remote.
-6. git push -u remote_name branch_name : Pushes code of current branch to remote and sets upstream at the same time. The advantage of the upstream is from the next time can just write "git push" to push changes on remote without mentioning the remote_name and branch_name repeatedly, it will automatically push current branches code to remote. And second advantage is when one will use "git status" command, it will also compare local commits with remote.
+2. git remote add <remote_name> <url> : Creates connection between your local project and github repo.
+3. git remote rename <old_name> <new_name> : Changes the remote name.
+4. git remote remove <remote_name> : Deletes the remote name.
+
+5. git push <remote_name> <branch_name> : Pushes code of current branch to remote.
+6. git push -u <remote_name> <branch_name> : Pushes code of current branch to remote and sets upstream at the same time. The advantage of the upstream is from the next time can just write "git push" to push changes on remote without mentioning the remote_name and branch_name repeatedly, it will automatically push current branches code to remote. And second advantage is when one will use "git status" command, it will also compare local commits with remote.
+
+7. git clone <url> : Clones a repo.
