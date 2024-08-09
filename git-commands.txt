@@ -55,3 +55,8 @@
 2. git stash pop : Takes out all the stashed progress into the current branch.
 3. git stash list : Shows all the stashed progress.
 4. git stash apply stash-id : Gives the stashed progress for the given stash-id.
+
+
+-- REMOTE --
+
+1. git remote -v : Shows all remote configs.
