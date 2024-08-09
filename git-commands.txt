@@ -68,3 +68,5 @@
 6. git push -u <remote_name> <branch_name> : Pushes code of current branch to remote and sets upstream at the same time. The advantage of the upstream is from the next time can just write "git push" to push changes on remote without mentioning the remote_name and branch_name repeatedly, it will automatically push current branches code to remote. And second advantage is when one will use "git status" command, it will also compare local commits with remote.
 
 7. git clone <url> : Clones a repo.
+8. git fetch <remote> : Downloads the latest changes from a remote repository but does not integrate them into your current working branch.
+9. git pull <remote> <branch> : Fetches changes from the remote repository and merges them into the current branch.
