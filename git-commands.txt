@@ -64,3 +64,4 @@
 3. git remote rename old_name new_name : Changes the remote name.
 4. git remote remove name : Deletes the remote name.
 5. git push remote_name branch_name : Pushes code of current branch to remote.
+6. git push -u remote_name branch_name : Pushes code of current branch to remote and sets upstream at the same time. The advantage of the upstream is from the next time can just write "git push" to push changes on remote without mentioning the remote_name and branch_name repeatedly, it will automatically push current branches code to remote. And second advantage is when one will use "git status" command, it will also compare local commits with remote.
