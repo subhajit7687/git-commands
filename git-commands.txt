@@ -61,5 +61,5 @@
 
 1. git remote -v : Shows all remote configs.
 2. git remote add name url : Creates connection between your local project and github repo.
-3. git remote rename old_name new_name : Changes the repo branch name.
-4. git remote remove name : Deletes the repo branch name.
+3. git remote rename old_name new_name : Changes the remote name.
+4. git remote remove name : Deletes the remote name.
